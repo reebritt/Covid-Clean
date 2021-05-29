@@ -9,8 +9,8 @@ require("dotenv").config();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-mongodb+srv;//sdbritt:Rattler99@cluster0.znhzz.mongodb.net/COVID?retryWrites=true&w=majority;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/covid", {
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://sdbritt:Rattler99@cluster0.znhzz.mongodb.net/COVID?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
